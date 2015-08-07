@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="clinic-pet-web:war exploded">
+    <output-path>$PROJECT_DIR$/clinic-pet-web/target/ClinicPetWeb</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="clinic-pet-web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="se-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="se" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-utils:1.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/clinic-pet-web/target/ClinicPetWeb/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="clinic-pet-web/web/Web" />
+    </root>
+  </artifact>
+</component>
