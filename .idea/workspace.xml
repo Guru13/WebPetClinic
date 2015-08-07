@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="242976b4-708d-4b24-9ba7-97efc569729f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/Admin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/Cat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/Client.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/Clinic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/ClinicRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/Dog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/Emulator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/Parot.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/Pet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/SimpleLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/src/main/java/by/guru13/lessons/clinic/UserException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clinic-pet-web/clinic-pet-web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/clinic_pet_web_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/clinic_pet_web_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/se/se.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="C:\projects\java-courses\WebPetClinic\.idea\artifacts\WebPetClinic_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\projects\java-courses\WebPetClinic\web\index.jsp" afterPath="" />
-      <change type="MOVED" beforePath="C:\projects\java-courses\WebPetClinic\web\WEB-INF\web.xml" afterPath="$PROJECT_DIR$/clinic-pet-web/src/main/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebPetClinic.iml" afterPath="$PROJECT_DIR$/WebPetClinic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="242976b4-708d-4b24-9ba7-97efc569729f" name="Default" comment="" />
     <ignored path="WebPetClinic.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,8 +29,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clinic-pet-web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44155845">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.6181818">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -720,12 +688,12 @@
       <created>1438973452787</created>
       <option name="number" value="Default" />
       <updated>1438973452787</updated>
-      <workItem from="1438973454338" duration="3737000" />
+      <workItem from="1438973454338" duration="3881000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3737000" />
+    <option name="totallyTimeSpent" value="3881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -740,7 +708,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -807,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clinic-pet-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44155845">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.6181818">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding />
         </state>
       </provider>
