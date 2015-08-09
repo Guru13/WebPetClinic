@@ -15,9 +15,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * Created by ASUS on 04.08.2015.
  */
 public class ClinicServlet extends HttpServlet {
-    final List<Pet> pets = new CopyOnWriteArrayList<Pet>();
-    final List<Client> clients = new CopyOnWriteArrayList<Client>();
-    String requestSearch;
+
+    private final List<Client> clients = new CopyOnWriteArrayList<Client>();
+    private String requestSearch;
 
     /**
      *
@@ -52,7 +52,9 @@ public class ClinicServlet extends HttpServlet {
                         "           <input type='submit' value='Submit'>" +
                         "</br>" +
                                 "</form>" +
+
                         this.viewClients() +
+                        errorData(req) +
                         "</br>" +
                         "<p></p>" +
                         "       <form action='" + req.getContextPath() + "/' method='post'>" +
@@ -76,6 +78,7 @@ public class ClinicServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Pet pet = null;
+
         if (req.getParameter("types") != null) {
             if (req.getParameter("types").equals("dog")) {
                 pet = new Dog(req.getParameter("petName"));
@@ -84,10 +87,10 @@ public class ClinicServlet extends HttpServlet {
             } else if (req.getParameter("types").equals("parrot")) {
                 pet = new Parot(req.getParameter("petName"));
             }
-            this.clients.add(new Client(req.getParameter("clientName"), pet));
+            if (!req.getParameter("clientName").isEmpty() && !req.getParameter("petName").isEmpty()) {
+                this.clients.add(new Client(req.getParameter("clientName"), pet));
+            }
         }
-
-//        this.pets.add(new Dog(req.getParameter("name")));
 
         requestSearch = req.getParameter("search");
         doGet(req, resp);
@@ -101,14 +104,13 @@ public class ClinicServlet extends HttpServlet {
         sb.append("<td style = 'border : 1px solid black'>Pet</td>");
         sb.append("<td style = 'border : 1px solid black'>Type</td>");
         sb.append("<tr>");
+
         for (Client client : this.clients){
-            if (!client.getId().isEmpty() && !client.getPet().getName().isEmpty()) {
                 sb.append("<tr>");
                 sb.append("<td style = 'border : 1px solid black'>").append(client.getId()).append("</td>");
                 sb.append("<td style = 'border : 1px solid black'>").append(client.getPet().getName()).append("</td>");
                 sb.append("<td style = 'border : 1px solid black'>").append(client.getPet().getClass().getSimpleName()).append("</td>");
                 sb.append("</tr>");
-            }
         }
         sb.append("</table>");
         return sb.toString();
@@ -122,7 +124,7 @@ public class ClinicServlet extends HttpServlet {
         sb.append("<td style = 'border : 1px solid black'>Type</td>");
         sb.append("<tr>");
         for (Client client : this.clients){
-            if (client.getId().equals(requestSearch) && !client.getId().isEmpty() && !client.getPet().getName().isEmpty()) {
+            if (client.getId().equals(requestSearch)) {
                 sb.append("<tr>");
                 sb.append("<td style = 'border : 1px solid black'>").append(client.getPet().getName()).append("</td>");
                 sb.append("<td style = 'border : 1px solid black'>").append(client.getPet().getClass().getSimpleName()).append("</td>");
@@ -133,4 +135,17 @@ public class ClinicServlet extends HttpServlet {
         return sb.toString();
     }
 
+    /**
+     * @param req
+     * @return
+     */
+    private String errorData(HttpServletRequest req) throws IOException {
+        StringBuilder sb = new StringBuilder();
+        if (req.getParameter("clientName") != null && req.getParameter("petName") != null){
+            if (req.getParameter("clientName").isEmpty() || req.getParameter("petName").isEmpty()){
+                sb.append("<h2>You should enter client's name and pet's name. Try again.</h2>");
+            }
+        }
+        return sb.toString();
+    }
 }
